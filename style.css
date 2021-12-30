@@ -1,0 +1,6 @@
+.disclaimer_box {
+  border: solid 1px black;
+  padding: 3px;
+  text-align: center;
+  display: table;
+}
