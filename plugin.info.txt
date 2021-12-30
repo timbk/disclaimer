@@ -4,5 +4,5 @@ email    tim.kuhlbusch@flipper-tauchen.de
 date     2021-12-30
 name     Disclaimer Plugin
 desc     Replacement renderer that renders a user defined message to the top of all pages in certain namespaces
-url      https://github.com/timbk/disclaimer
+url      https://github.com/timbk/dokuwiki-disclaimer
 tags     disclaimer, renderer
