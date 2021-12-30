@@ -13,6 +13,12 @@ for(var idx=(boxes.length-1); idx>=0; idx--) {
     var target_namespace = boxes[idx].dataset.disclaimerNs;
     console.debug(idx, "Target Namespace", target_namespace);
 
+    // remove if action is not "show" (e.g. during login)
+    if ( JSINFO.ACT != "show" ) {
+        boxes[idx].remove();
+        continue;
+    }
+
     // remove if not in main body
     if ( (target_parent_id != "*") && (boxes[idx].parentNode.id != target_parent_id) ) {
         boxes[idx].remove();
