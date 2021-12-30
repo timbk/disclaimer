@@ -9,11 +9,12 @@ var boxes = document.getElementsByClassName("disclaimer_box");
 
 // going backwords because remove() seems to affect the length of boxes
 for(var idx=(boxes.length-1); idx>=0; idx--) {
+    var target_parent_id = boxes[idx].dataset.parentId;
     var target_namespace = boxes[idx].dataset.disclaimerNs;
     console.debug(idx, "Target Namespace", target_namespace);
 
     // remove if not in main body
-    if (boxes[idx].parentNode.id != "bodyContent") {
+    if ( (target_parent_id != "*") && (boxes[idx].parentNode.id != target_parent_id) ) {
         boxes[idx].remove();
         continue;
     }
