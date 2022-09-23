@@ -4,6 +4,10 @@
 
 A dokuwiki render plugin that renders a user defined info message to the top of pages in user defined namespaces.
 
+## Example
+
+You can see the plugin in action on [this page](https://wiki.flipper-tauchen.de/uebungen/start) (yellow box).
+
 ## Install
 
 You can get a zip file here: https://github.com/timbk/dokuwiki-disclaimer/zipball/master
